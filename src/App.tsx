@@ -132,11 +132,12 @@ export default function App() {
     
     // Save to backend
     try {
-      await fetch('/api/results', {
+      await fetch('https://script.google.com/macros/s/AKfycbyexxwusu_ohOX6IIIxcsOpN44BAQPXtsBFXobt6qEQY-Ahbk_ZU4z5D0LauQm8SkyF/exec', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, type }),
       });
+      console.log("구글 시트에 저장 완료!");
       await fetchResults();
     } catch (error) {
       console.error("Failed to save result", error);
