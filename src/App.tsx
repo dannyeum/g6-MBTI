@@ -132,7 +132,7 @@ export default function App() {
     
     // Save to backend
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbyexxwusu_ohOX6IIIxcsOpN44BAQPXtsBFXobt6qEQY-Ahbk_ZU4z5D0LauQm8SkyF/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbwxyGZRogo2bl9HP2xYhXXs8tRNLNl8zNwTXWIdecsHq2AuEuHhXapgbCgtwr2CT15pgw/exec', {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
